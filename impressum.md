@@ -14,9 +14,9 @@ Palmenwaldstraße 50
 73733 Esslingen am Neckar
 
 **Kontaktaufnahme:**  
-[gregorgott.software@yahoo.com](mailto:gregorgott.software@yahoo.com)
+[{{ site.email  }}](mailto:{{ site.email  }})
 
-### Urheberrechtshinweise
+### Urheberrechtshinweis / Copyright notice
 
-Die Inhalte und Werke auf dieser Website unterliegen der [MIT Lizenz](https://opensource.org/licenses/MIT).
-Eine Nennung des Autors ist nicht notwendig, aber gerne gesehen.
+**DE:** Die Inhalte und Werke auf dieser Website unterliegen der [{{ site.license }}]({{ site.license_url }}).  
+**EN:** The content on this website is licensed under the [{{ site.license }}]({{ site.license_url }}).
