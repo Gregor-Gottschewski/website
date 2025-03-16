@@ -79,7 +79,7 @@ Here's a small cheat sheet with the most important expressions to follow the nex
 
 **Example:** In most programming languages, strings are marked by single or double quotes. By using `".*"` we are able to match all double-quoted strings (empty or not).
 
-I created a small cheat sheet over the most important regex expressions as PDF. You can download it [directly](https://raw.githubusercontent.com/Gregor-Gottschewski/Regex-Cheatsheet/refs/heads/main/cheat_sheet.pdf) or visit the [GitHub Repository page](https://github.com/Gregor-Gottschewski/Regex-Cheatsheet).
+I created a small cheat sheet over the most important regex expressions as PDF. You can download it [directly](https://raw.githubusercontent.com/Gregor-Gottschewski/regex-cheat-sheet/refs/heads/main/cheat_sheet.pdf) or visit the [GitHub Repository page](https://github.com/Gregor-Gottschewski/regex-cheat-sheet).
 
 ## What is Flex?
 
