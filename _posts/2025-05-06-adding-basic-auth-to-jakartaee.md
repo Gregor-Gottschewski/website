@@ -1,8 +1,6 @@
 ---
 layout: post
 title:  "Using Basic Authentication in a Jakarta EE Application"
-author: "Gregor Gottschewski"
-date:   2025-05-08 13:00:00 +0100
 categories: jakartaee
 ---
 
