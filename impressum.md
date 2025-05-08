@@ -6,14 +6,14 @@ permalink: /impressum/
 
 Angaben gemäß § 5 TMG
 
-**Verantwortliche Person:**  
+**Verantwortliche Person:**
 Gregor Gottschewski
 
 **Postanschrift:**  
 Palmenwaldstraße 50  
 73733 Esslingen am Neckar
 
-**Kontaktaufnahme:**  
+**Kontaktaufnahme/Contact:**
 [{{ site.email  }}](mailto:{{ site.email  }})
 
 ### Urheberrechtshinweis / Copyright notice
