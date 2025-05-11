@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using Basic Authentication in a Jakarta EE Application"
+title:  "Using Basic Authentication in Jakarta EE Applications"
 categories: jakartaee
 ---
 
@@ -12,7 +12,7 @@ At the end you will have a Jakarta EE application that uses basic authentication
 
 > **Where can I find the source code?**
 >
-> The complete source code of the example can be found on [GitHub](https://github.com/Gregor-Gottschewski/jakartaee-basic-auth).
+> The complete source code of this article can be found on [GitHub](https://github.com/Gregor-Gottschewski/jakartaee-basic-auth).
 
 ## Dependencies and setup
 
@@ -44,9 +44,9 @@ This project was tested on WildFly 35.0.1 and JakartaEE 11 and depends on the fo
 
 ## Let's start
 
-For this project, just a simple structure with three classes is needed. One class contains the code for the REST endpoint, and the second class contains a so called identity store. An identity store is a black box, where credentials come in and identity goes out. I name the first two classes creatively `HelloWorldResource` and `BasicAuthIdentStore`. The `HelloWorldResource` class contains a simple REST endpoint with a `GET` method that returns either "Hello unauthenticated user" if not username and password are provided or "Hello [username]!" otherwise.
+For this project, just a simple structure with three classes is needed. One class contains the code for the REST endpoint, and the second class contains a so called identity store. An identity store is a black box, where credentials come in and identity goes out. I name the first two classes creatively `HelloWorldResource` and `BasicAuthIdentStore`. The `HelloWorldResource` class contains a simple REST endpoint with a `GET` method that returns either "Hello unauthenticated user" if no username and password are provided or "Hello [username]!" otherwise.
 
-The most interesting part of the `HelloWorldResource` class is the use of `@Context SecurityContext securityContext`. The `SecurityContext` is a interface that provides information about the authenticated user. We use this interface to check if the user is authenticated. Te retrieve the username, you can use `securityContext.getUserPrincipal().getName()` like shown underneath.
+The most interesting part of the `HelloWorldResource` class is the use of `@Context SecurityContext securityContext`. The `SecurityContext` is a interface that provides information about the authenticated user. We use this interface to check if the user is authenticated. To retrieve the username, you can use `securityContext.getUserPrincipal().getName()` like shown underneath.
 
 ```java
 package me.gregorgott.jakartaeebasicauth;
@@ -114,14 +114,14 @@ public class BasicAuthIdentStore implements IdentityStore {
 }
 ```
 
-If you decompile the `UsernamePasswordCredential` class, you see that this class only stores username and password. This is the only moment were you can check the credentials, later in the `HelloWorldResource` only the username can be retrieved!
+If you look at the source code of `UsernamePasswordCredential`, you see that this class only stores username and password. This is the only moment were you can check the credentials, later in the `HelloWorldResource` **only the username** can be retrieved!
 
 You have three options to return in `validate`:
 1. `CredentialValidationResult.INVALID_RESULT` - the user is not authenticated.
 2. `CredentialValidationResult.NOT_VALIDATED_RESULT` - the user is not authenticated, but the credentials were not checked.
 3. `CredentialValidationResult` - the user is authenticated.
 
-The last option uses the constructor `CredentialValidationResult(String callerName, Set<String> groups)`. The first parameter is the username and the second parameter is a set of roles. In this example, I just use the role "user". Another more simple constructor is `CredentialValidationResult(String callerName)`, which does not use roles. This constructor is used if you do not need roles in your application. Our code, generally does not need roles, but it shows you the usage of them.
+The last option uses the constructor `CredentialValidationResult(String callerName, Set<String> groups)`. The first parameter is the username and the second parameter is a set of roles. In this example, I just use the role "user". Another more simple constructor is `CredentialValidationResult(String callerName)`, which is used if the application does not use roles. Our code, generally does not need roles, but I wanted to show you how to use them.
 
 The last class to implement is the `ApplicationMain` class. This class is nothing special and does not differ from a normal Jakarta EE application:
 
