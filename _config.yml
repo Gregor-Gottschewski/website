@@ -24,8 +24,16 @@ description: >- # this means to ignore newlines until "baseurl:"
   On this website I talk a bit about computers, programming, tech and much more.
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://gregors-computer-lab.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  Gregor-Gottschewski
-linkedin_username: gregor-gottschewski
+minima:
+  social_links:
+    github:
+      url: "https://github.com/Gregor-Gottschewski"
+      title: "GitHub"
+      icon: "github"
+    linkedin:
+      url: "https://www.linkedin.com/in/Gregor-Gottschewski"
+      title: "LinkedIn"
+      icon: "linkedin"
 
 # Build settings
 theme: minima

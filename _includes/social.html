@@ -1,0 +1,16 @@
+<ul class="social-media-list">
+
+{%- for entry in site.minima.social_links -%}
+  {% assign key = entry[0] %}
+  {% assign data = entry[1] %}
+
+  <li>
+    <a href="{{ data.url }}" title="{{ data.title }}">
+      <svg class="svg-icon">
+        <use xlink:href="/assets/minima-social-icons.svg#{{ data.icon}}"></use>
+      </svg>
+      <span class="username">{{ data.title }}</span>
+    </a>
+  </li>
+{%- endfor -%}
+</ul>
