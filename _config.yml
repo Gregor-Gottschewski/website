@@ -34,6 +34,7 @@ minima:
       url: "https://www.linkedin.com/in/Gregor-Gottschewski"
       title: "LinkedIn"
       icon: "linkedin"
+show_excerpts: true
 
 # Build settings
 theme: minima
