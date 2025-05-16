@@ -1,7 +1,6 @@
 ---
 layout: post
-title:  "Weird Computer Questions"
-date:   2025-05-16 15:00:00 +0100
+title: "Weird Computer Questions"
 categories: weird-computer-questions
 excerpt: This is the result of shower thoughts, boredom, and way too much ambition. I am answering two weird computer questions and try to be scientific. Let's see if it worked.
 banner: /2025/05/16/banner-computer-questions.svg
