@@ -3,6 +3,7 @@ layout: post
 title:  "Writing a Lexer using Flex"
 date:   2025-03-08 11:15:00 +0100
 categories: compiler lexer
+excerpt: A lexical analyzer (or, simply <em>lexer</em>) is a program used in compiler development. Lexers generate tokens from input text, mostly source code, which is essential for syntax analysis.
 ---
 
 A lexical analyzer (or, simply _lexer_) is a program used in compiler development. Lexers generate tokens from input text, mostly source code, which is essential for syntax analysis. You could write a lexer from scratch using pure C. However, that approach is inefficient and mistakes can happen quickly.

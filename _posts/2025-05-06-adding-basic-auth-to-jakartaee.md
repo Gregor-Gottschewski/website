@@ -2,6 +2,7 @@
 layout: post
 title:  "Using Basic Authentication in Jakarta EE Applications"
 categories: jakartaee
+excerpt: Secure your Jakarta EE applications with the Basic authentication. This blog post shows you a simple setup to use Basic authentication in Jakarta EE.
 ---
 
 # Using Basic Authentication in a Jakarta EE Application

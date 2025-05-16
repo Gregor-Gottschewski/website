@@ -2,6 +2,7 @@
 layout: post
 title: Create Your Own File System | Part 1
 categories: filesystem
+excerpt: File systems are a fundamental part of every operating system to store temporary or persistent data. Some file system are quite complex, other more simple. In this blog post the focus is creating a <em>flat</em> filesystem.
 ---
 
 <script type="text/javascript" async
