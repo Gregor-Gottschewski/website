@@ -152,7 +152,7 @@ table td { border: 1px solid #e8e8e8; }
 .highlight { background: #fff; }
 .highlighter-rouge .highlight { background: #edf2f4; }
 .highlight .c { color: #998; font-style: italic; }
-.highlight .err { color: #a61717; background-color: #e3d2d2; }
+.highlight .err { color: #a61717; }
 .highlight .k { font-weight: bold; }
 .highlight .o { font-weight: bold; }
 .highlight .cm { color: #998; font-style: italic; }
@@ -224,4 +224,12 @@ table td { border: 1px solid #e8e8e8; }
   a { color: #ff4a68; }
   .site-title {color: #ff4a68; }
   .post-box { background-color: #25273f; }
-  .post-link { color: #ff4a68 } }
+  .post-link { color: #ff4a68 }
+  .highlight .err { color: #ee2424; }
+  .highlight .kt { color: rgb(96, 120, 192); }
+  .highlight .s { color: rgb(255, 57, 106); }
+  .highlight .na { color: #00c6c6; }
+  .highlight .nc { color: rgb(105, 132, 214); }
+  .highlight .nf { color: rgb(255, 68, 68); }
+  .highlight .nn { color: #bcbcbc; }
+  .highlight .nt { color: #7f7fff; } }
